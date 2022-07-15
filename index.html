@@ -7,9 +7,9 @@
     <title>BIWA</title>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;500;700&family=Roboto:wght@400;500;700&family=Satisfy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
     <div class="app">
@@ -18,8 +18,8 @@
             <div class="grid wide">
                 <!-- Nav -->
                 <nav class="nav">
-                    <div class="nav__left center">
-                        <div class="nav__left-item">
+                    <div class="nav__logo">
+                        <div class="nav__logo-img">
                             <img src="./assets/images/Frame-4.png" alt="">
                         </div>
                     </div>
@@ -42,36 +42,45 @@
                     </ul>
 
                     <!-- Nav mobile -->
-                    <!-- <label for="nav-mobile-input" class="nav-mobile-menu">
-                        <i class="fas fa-bars"></i>
+                    <label for="mobile-nav-checkbox" class="header__mobile-navbar">
+                        <i class="header__mobile-navbar-icon fas fa-bars" style="user-select: auto;"></i>
                     </label>
-                    <input type="checkbox" hidden name="" class="nav__input" id="nav-mobile-input">
-                    <label for="nav-mobile-input" class="nav__overlay"></label>
-                    <div class="nav-mobile">
-                        <ul class="mobile-item">
-                            <li class="nav-mobile-item">
-                                <a class="nav__middle-text" href="#">About</a>
+                    <input type="checkbox" hidden name="" class="header__nav-input" id="mobile-nav-checkbox">
+                    <label for="mobile-nav-checkbox" class="header__overlay"></label>
+                    <!-- nav -->
+                    <nav for="mobile-nav-checkbox" class="header__overlay-nav">
+                        <label for="mobile-nav-checkbox" class="header__mobile-times">
+                            <i class="header__mobile-times-icon fas fa-times"></i>
+                        </label>
+                        <ul class="header__overlay-ul">
+                            <li class="header__overlay-li">
+                                <a class="header__overlay-a" href="#">About</a>
                             </li>
-                            <li class="nav-mobile-item">
-                                <a class="nav__middle-text" href="#">Service</a>
+                            <li class="header__overlay-li">
+                                <a class="header__overlay-a" href="">Service</a>
                             </li>
-                            <li class="nav-mobile-item">
-                                <a class="nav__middle-text" href="#">Career</a>
+                            <li class="header__overlay-li">
+                                <a class="header__overlay-a" href="">Career</a>
                             </li>
-                            <li class="nav-mobile-item">
-                                <a class="nav__middle-text" href="#">Partnership</a>
+                            <li class="header__overlay-li">
+                                <a class="header__overlay-a" href="">Partnership</a>
                             </li>
-                            <li class="nav-mobile-item">
-                                <a class="nav__middle-text" href="#">Contact</a>
+                            <li class="header__overlay-li">
+                                <a class="header__overlay-a" href="">Contact</a>
                             </li>
                         </ul>
-                      </div> -->
-
+                    </nav>
                     
+                    <!-- Logo mobile -->
+                    <div class="nav-mobile-logo">
+                        <img src="./assets/images/wgt-solution-removebg-preview.png" alt="">
+                    </div>
+
+                    <!-- search -->
                     <div class="nav__right">
-                        <!-- <i class="fas fa-bars"></i> -->
                         <i class="fas fa-search"></i>
                     </div>
+            
                 </nav>
             </div>
         </header>
