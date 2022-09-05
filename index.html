@@ -1,113 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <title>BIWA</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BIWA</title>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;500;700&family=Roboto:wght@400;500;700&family=Satisfy&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" sizes="150x150" href="./assets/images/logo_biwa.png" type="image/png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;500;700&family=Roboto:wght@400;500;700&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;900&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
+
 <body>
-    <div class="app">
+    <div class="wrap">
         <!-- Header -->
         <header class="header">
-            <div class="grid wide">
-                <!-- Nav -->
-                <nav class="nav">
-                    <div class="nav__logo">
-                        <div class="nav__logo-img">
-                            <img src="./assets/images/Frame-4.png" alt="">
-                        </div>
-                    </div>
-                    <ul class="nav__middle">
-                        <li class="nav__middle-item">
-                            <a class="nav__middle-text" href="#">About</a>
+            <!-- <div class="grid wide"> -->
+            <!-- Nav -->
+            <nav class="nav">
+                <div class="nav__logo">
+                    <a href="#" class="nav__logo-img">
+                        <img src="./assets/images/logo_biwa.png" alt="">
+                    </a>
+                </div>
+                <h1>BiWa</h1>
+                <!-- <ul class="nav__middle">
+                    <li class="nav__middle-item">
+                        <a class="nav__middle-text" href="#">
+                            About
+                            <span class="drop-toggle">
+                                <i class="fas fa-angle-down"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav__middle-item">
+                        <a class="nav__middle-text" href="#">
+                            Service
+                            <span class="drop-toggle">
+                                <i class="fas fa-angle-down"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav__middle-item">
+                        <a class="nav__middle-text" href="#">
+                            Career
+                            <span class="drop-toggle">
+                                <i class="fas fa-angle-down"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav__middle-item">
+                        <a class="nav__middle-text" href="#">
+                            Partnership
+                            <span class="drop-toggle">
+                                <i class="fas fa-angle-down"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav__middle-item">
+                        <a class="nav__middle-text" href="#">
+                            Contact
+                            <span class="drop-toggle">
+                                <i class="fas fa-angle-down"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul> -->
+
+
+                <!-- Logo mobile  -->
+                <!-- <div class="nav-mobile-logo">
+                    <img src="./assets/images/logo_biwa.png" alt="">
+                </div> -->
+
+                <!-- Nav mobile -->
+                <!-- <label for="mobile-nav-checkbox" class="header__mobile-navbar">
+                    <i class="header__mobile-navbar-icon fas fa-bars" style="user-select: auto;"></i>
+                </label>
+                <input type="checkbox" hidden name="" class="header__nav-input" id="mobile-nav-checkbox">
+                <label for="mobile-nav-checkbox" class="header__overlay"></label>
+                <nav for="mobile-nav-checkbox" class="header__overlay-nav">
+                    <label for="mobile-nav-checkbox" class="header__mobile-times">
+                        <i class="header__mobile-times-icon fas fa-times"></i>
+                    </label>
+                    <ul class="header__overlay-ul">
+                        <li class="header__overlay-li">
+                            <a class="header__overlay-a" href="#">About</a>
                         </li>
-                        <li class="nav__middle-item">
-                            <a class="nav__middle-text" href="#">Service</a>
+                        <li class="header__overlay-li">
+                            <a class="header__overlay-a" href="">Service</a>
                         </li>
-                        <li class="nav__middle-item">
-                            <a class="nav__middle-text" href="#">Career</a>
+                        <li class="header__overlay-li">
+                            <a class="header__overlay-a" href="">Career</a>
                         </li>
-                        <li class="nav__middle-item">
-                            <a class="nav__middle-text" href="#">Partnership</a>
+                        <li class="header__overlay-li">
+                            <a class="header__overlay-a" href="">Partnership</a>
                         </li>
-                        <li class="nav__middle-item">
-                            <a class="nav__middle-text" href="#">Contact</a>
+                        <li class="header__overlay-li">
+                            <a class="header__overlay-a" href="">Contact</a>
                         </li>
                     </ul>
-
-                    <!-- Nav mobile -->
-                    <label for="mobile-nav-checkbox" class="header__mobile-navbar">
-                        <i class="header__mobile-navbar-icon fas fa-bars" style="user-select: auto;"></i>
-                    </label>
-                    <input type="checkbox" hidden name="" class="header__nav-input" id="mobile-nav-checkbox">
-                    <label for="mobile-nav-checkbox" class="header__overlay"></label>
-                    <!-- nav -->
-                    <nav for="mobile-nav-checkbox" class="header__overlay-nav">
-                        <label for="mobile-nav-checkbox" class="header__mobile-times">
-                            <i class="header__mobile-times-icon fas fa-times"></i>
-                        </label>
-                        <ul class="header__overlay-ul">
-                            <li class="header__overlay-li">
-                                <a class="header__overlay-a" href="#">About</a>
-                            </li>
-                            <li class="header__overlay-li">
-                                <a class="header__overlay-a" href="">Service</a>
-                            </li>
-                            <li class="header__overlay-li">
-                                <a class="header__overlay-a" href="">Career</a>
-                            </li>
-                            <li class="header__overlay-li">
-                                <a class="header__overlay-a" href="">Partnership</a>
-                            </li>
-                            <li class="header__overlay-li">
-                                <a class="header__overlay-a" href="">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    
-                    <!-- Logo mobile -->
-                    <div class="nav-mobile-logo">
-                        <img src="./assets/images/wgt-solution-removebg-preview.png" alt="">
-                    </div>
-
-                    <!-- search -->
-                    <div class="nav__right">
-                        <i class="fas fa-search"></i>
-                    </div>
-            
-                </nav>
-            </div>
+                </nav> -->
+                <div class="nav__right">
+                    <a href="#">
+                        <span>Get Started</span>
+                    </a>
+                </div>
+            </nav>
+            <!-- </div> -->
         </header>
 
         <!-- Body -->
         <div class="body">
-            <div class="grid wide">
-                <div class="row">
-                    <div class="col l-6  c-12 ">
-                        <div class="banner-content">
-                            <h1>BIWA</h1>
-                            <h2> Ứng dụng thiết kế sáng tạo  <br> ốp điện thoại và áo phông</h2>
-                            <div class="banner-app">
-                                <img class="banner-app-ios" src="./assets/images/apple_Store.png" alt="">
-                                <img class="banner-app-android" src="./assets/images/google_play.png" alt="">
+            <section class="banner">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-6 m-6 c-12 container">
+                            <div class="banner-image" data-aos="fade-right" data-aos-delay="30" data-aos-duration="1000"
+                                data-aos-easing="ease-in-out">
+                                <img src="./assets/images/Untitled-1.png" class="banner-right__img">
+                                <div class="slide-show">
+                                    <!--Area of the images-->
+                                    <div class="slide">
+                                        <img src="./assets/images/anh_1.png">
+                                        <img src="./assets/images/anh_2.png">
+                                        <img src="./assets/images/anh_3.png">
+                                        <img src="./assets/images/anh_4.png">
+                                        <img src="./assets/images/anh_5.png">
+                                        <img src="./assets/images/anh_6.png">
+                                        <img src="./assets/images/anh_7.png">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col l-6 m-6 c-12 container">
+                            <div class="banner-content" data-aos="fade-left" data-aos-delay="30"
+                                data-aos-duration="1000" data-aos-easing="ease-in-out">
+                                <img src="./assets/images/logo_biwa.png">
+                                <h2> Ứng dụng thiết kế sáng tạo <br> ốp điện thoại và áo phông</h2>
+                                <div class="form-group">
+                                    <div>
+                                        <input type="email" class="input-control" placeholder="Email address">
+                                    </div>
+                                    <div>
+                                        <button class="btn-control">Free trial</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col l-6 c-12">
-                        <div class="banner-image">
-                            <img src="./assets/images/about-img-2.png" class="banner-right__img">
+                </div>
+            </section>
+
+            <section class="download" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1000"
+                data-aos-easing="ease-in-out">
+                <div class="grid wide">
+                    <div class="row container">
+                        <div class="col l-12">
+                            <div class="download-app">
+                                <h2>Get the app now</h2>
+                                <p>Create custom Case phone and Shirt with Biwa </br>
+                                    more visitors than any website</p>
+                            </div>
+                            <div class="download-store">
+                                <img src="./assets/images/appstore-lg.png" alt="">
+                                <img src="./assets/images/playstore-lg.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="rating" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1000"
+                data-aos-easing="ease-in-out">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="owl-carousel" id="slider">
+                            <div class="rating__single owl__item">
+                                <div class="rating__img">
+                                    <img src="./assets/images/client-1.jpg" alt="">
+                                </div>
+                                <div class="rating__desc">
+                                    <h4>Doflamingo</h4>
+                                    <p>Do you want to be even more successful? Learn to love learning and growth.
+                                        The more effort you put into improving your
+                                        skills, the bigger the payoff you.</p>
+                                    <div class="rating__stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating__single  owl__item">
+                                <div class="rating__img">
+                                    <img src="./assets/images/client-2.jpg" alt="">
+                                </div>
+                                <div class="rating__desc">
+                                    <h4>Law</h4>
+                                    <p>A purpose is the eternal condition for success.
+                                        Every former smoker can tell you just how hard it is to stop smoking
+                                        cigarettes. However.</p>
+                                    <div class="rating__stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating__single  owl__item">
+                                <div class="rating__img">
+                                    <img src="./assets/images/client-3.jpg" alt="">
+                                </div>
+                                <div class="rating__desc">
+                                    <h4>Shanks</h4>
+                                    <p>Do you want to be even more successful? Learn to love learning and growth.
+                                        The more effort you put into improving your
+                                        skills, the bigger the payoff you.</p>
+                                    <div class="rating__stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating__single  owl__item">
+                                <div class="rating__img">
+                                    <img src="./assets/images/client-4.jpg" alt="">
+                                </div>
+                                <div class="rating__desc">
+                                    <h4>Zoro</h4>
+                                    <p>A purpose is the eternal condition for success.
+                                        Every former smoker can tell you just how hard it is to stop smoking
+                                        cigarettes. However.</p>
+                                    <div class="rating__stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <section class="program">
+                <div class="grid wide">
+                    <div class="row revert">
+                        <div class="col l-6 m-7 c-12">
+                            <div class="program-app" data-aos="fade-right" data-aos-delay="30" data-aos-duration="1000"
+                                data-aos-easing="ease-in-out">
+                                <h2 class="program-heading">Making trip is fun. Travel with friends.</h2>
+                                <p class="program-desc">Create custom landing pages with Omega that convert more
+                                    visitors
+                                    than any website. With lots of unique blocks, you can easily build a page without
+                                    coding.
+                                </p>
+                                <div class="program-list">
+                                    <span>1</span>
+                                    <div class="program-list__desc">
+                                        <h4>Find your trip partner</h4>
+                                        <p>With lots of unique blocks, you can easily build
+                                            a page without coding. Build your next landing
+                                            page quickly.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="program-list">
+                                    <span>2</span>
+                                    <div class="program-list__desc">
+                                        <h4>Plan trip with easy steps</h4>
+                                        <p>With lots of unique blocks, you can easily build
+                                            a page without coding. Build your next landing
+                                            page quickly.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-6 m-5 c-12">
+                            <div class="program-img" data-aos="fade-left" data-aos-delay="30" data-aos-duration="1000"
+                                data-aos-easing="ease-in-out">
+                                <img src="./assets/images/l7-mobile.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="view">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-6 m-6">
+                            <div class="view-img" data-aos="fade-right" data-aos-delay="30" data-aos-duration="1000"
+                                data-aos-easing="ease-in-out">
+                                <img src="./assets/images/l7-content2-image-1.jpg" alt="">
+                                <img src="./assets/images/l7-content2-image-3.jpg" alt="">
+                                <img src="./assets/images/l7-content2-image-2.jpg" alt="">
+                                <img src="./assets/images/l7-content2-image-4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col l-6 m-6">
+                            <div class="view-context" data-aos="fade-left" data-aos-delay="30" data-aos-duration="1000"
+                                data-aos-easing="ease-in-out">
+                                <h2>See the world & spend less always.</h2>
+                                <p>Create custom landing pages with Omega that convert more visitors than any website.
+                                    With lots of unique blocks, you can easily build a page without coding.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="app">
+                <div class="grid wide">
+                    <div class="row revert">
+                        <div class="col l-6 m-6 c-12">
+                            <div class="app-context" data-aos="fade-right" data-aos-delay="30" data-aos-duration="1000"
+                                data-aos-easing="ease-in-out">
+                                <h2 class="app-heading">
+                                    Improving your travel experience.
+                                </h2>
+                                <p class="app-desc">
+                                    Create custom landing pages with Omega that converts more visitors than any website.
+                                    With lots of unique blocks, you can easily build a page without coding.
+                                </p>
+                                <button class="app-btn">
+                                    <a href="#">
+                                        <div class="span">Get this app</div>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col l-6 m-6 c-12">
+                            <div class="app-img" data-aos="fade-left" data-aos-delay="30" data-aos-duration="1000"
+                                data-aos-easing="ease-in-out">
+                                <img src="./assets/images/l7-mobile-2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="video">
+                <div class="video-img">
+                    <span onclick="startVideo()">
+                        <i class="fa fa-play"></i>
+                    </span>
+                </div>
+                <div class="video-player" id="videoPlayer" onclick="stopVideo()">
+                    <iframe id="myVideo" class="my-video" auto src="https://www.youtube.com/embed/BPYu8lksvZM">
+                    </iframe>
+                    <i class="fa fa-times" onclick="stopVideo()"></i>
+                </div>
+            </section>
         </div>
-        
+
         <!-- Footer -->
         <footer class="footer">
             <div class="grid wide">
@@ -179,6 +456,47 @@
             </div>
         </footer>
 
+        <script>
+            var videoPlayer = document.getElementById('videoPlayer');
+            var myVideo = document.getElementById('myVideo');
+
+            function stopVideo() {
+                videoPlayer.style.display = 'none';
+            }
+
+            function startVideo() {
+                videoPlayer.style.display = 'block';
+            }
+        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script>
+            /* carousel */
+$('#slider').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: false
+        },
+        768: {
+            items: 2,
+            nav: false
+        }
+    }
+})
+$(".owl-dot").on("click", function () {
+    $(".owl-dot").removeClass("active");
+})
+        </script>
     </div>
 </body>
+
 </html>

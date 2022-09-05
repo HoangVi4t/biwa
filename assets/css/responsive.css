@@ -1,0 +1,463 @@
+/* Small Tablet */
+@media (max-width: 911px){
+    .nav__middle-text{
+        font-size: 1.8rem;
+    }
+    .nav{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 11rem;
+        padding: 0 1rem;
+    }
+    .nav__logo{
+        /* display:none; */
+    }
+    /* .nav__logo-img img{
+        height: 6rem;
+    } */
+
+    .nav-mobile-logo{
+        display:block;
+        position: relative;
+        transform: translateY(-45%);
+        top: 50%;
+    }
+    .nav-mobile-logo img{
+        width:11rem;
+    }
+    .banner-app{
+        flex-flow: column;
+    }
+    .banner-content img{
+        width: 40%;
+    }
+    .form-group{
+        margin: 0 auto;
+    }
+    .footer-menu{
+        gap: 3rem;
+    }
+    /* nav mobile */
+    .nav__middle{
+        display:none
+    }
+    .header__mobile-navbar{
+        display: block !important;
+    }   
+    .nav__right{
+        /* display: none; */
+    }
+    .nav-mobile-logo{
+        margin-right: 0;
+    }
+    .banner-content{
+        margin-top:0;
+    }
+    .banner-content {
+        margin-right: 0;
+    }
+    .rating-content{
+        padding: 0 6.6rem 0 ;
+    } 
+    .banner-image img{
+        width: 40%;
+    }
+    .program-app{
+        padding: 0 6.6rem 0;
+    }
+    .program-img img{
+        width: 45%;
+    }
+    .program-heading{
+        font-size: 4.4rem;
+    }
+    .view-context{
+        padding: 0 10rem;
+        margin-top:4rem;
+        text-align: left;
+    }
+    .view-img{
+        text-align:center;
+    }
+    .view img:first-child{
+        width: 60%;
+        transform: translateY(-5.4rem)
+    }
+    
+    .view img:nth-child(2){
+        width: 60%;
+        transform: translate(0,-3.4rem)
+    }
+    
+    .view img:nth-child(3){
+        width: 60%;
+        transform: translateY(-1.4rem);
+    }
+    
+    .view img:nth-child(4){
+        width: 60%;
+        transform: translate(0,0.6rem)
+    }
+    .view-context h2{
+        margin-top: 0;
+        font-size: 3.8rem;
+    }
+    .app-img img{
+        width: 45%;
+    }
+    .app-context{
+        padding: 0 10rem;
+        margin-top: 0;
+    }
+    .app-heading{
+        font-size: 3.8rem;
+    }
+    .my-video{
+        width: 54rem;
+        height: 34rem;
+    }
+    .video-img{
+        padding: 15rem 15rem;
+    }
+    .slide-show{
+        width:20rem;
+        height:41rem;
+        border-radius:0px 0px 14px 14px;
+    }
+    .slide img{
+        height: 41rem;
+        width: 100%;
+        object-fit: cover;
+        image-rendering: pixelated;
+    }
+    .banner{
+        padding: 0 0 10rem 0;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1286px){
+    .program-img{
+        margin-top:7rem;
+    }
+    .program-img img{
+        width: 60%;
+    }
+    .program-app{
+        width: 130%;
+    }
+    .view-img{
+        /* padding-left: 6rem; */
+    }
+    .view-context{
+        padding-right: 6rem;
+    }
+    .view-context h2{
+        margin-top:10rem;
+    }
+    .view img:first-child{
+        width: 45%;
+    }
+    
+    .view img:nth-child(2){
+        width: 45%;
+    }
+    
+    .view img:nth-child(3){
+        width: 45%;
+        transform: translateY(-11.6rem);
+    }
+    
+    .view img:nth-child(4){
+        width: 45%;
+    }
+    
+}
+
+/* IphoneX */
+@media (max-width: 599px) {
+    .nav__right{
+        display:none;
+    }
+    .nav h1{
+        font-size: 7rem;
+    }
+    .banner{
+        padding: 5rem 0 5rem 0;
+    }
+    .banner-image img{
+        width: 50% !important;
+    }
+    .header__overlay-nav {
+        width: 27rem;
+    }
+    .banner-content h2{
+        font-size: 2.5rem;
+    }
+    .form-group{
+        width: 34rem;
+    }
+    .input-control{
+        padding-right: 0;
+    }
+    .btn-control{
+        width: 10rem;
+    }
+    .rating-content{
+        padding: 0 2.6rem 0 ;
+    } 
+    .program-app{
+        padding: 0 2rem;
+    }
+    .program-heading{
+        font-size: 3.4rem;
+    }
+    .program-img img{
+        width: 60%;
+    }
+    .program-list span{
+        width: 12rem;
+        height: 4.6rem;
+    }
+    .view-context{
+        padding: 0 2rem;
+        margin-top:4rem;
+        text-align: left;
+    }
+    .view-img{
+        text-align:center;
+    }
+    .view img:first-child{
+        width: 90%;
+        transform: translateY(-5.4rem)
+    }
+    
+    .view img:nth-child(2){
+        width: 90%;
+        transform: translate(0,-3.4rem)
+    }
+    
+    .view img:nth-child(3){
+        width: 90%;
+        transform: translateY(-1.4rem);
+    }
+    
+    .view img:nth-child(4){
+        width: 90%;
+        transform: translate(0,0.6rem)
+    }
+    .view-context h2{
+        margin-top: 0;
+        font-size: 3.8rem;
+    }
+    .app-img img{
+        width: 65%;
+    }
+    .app-context{
+        padding: 0 2rem;
+    }
+    .app-heading{
+        font-size: 3.8rem;
+    }
+    .my-video {
+        width: 35rem;
+        height: 26rem;
+    }
+    .footer-menu{
+        gap: 1.6rem;
+    }
+    .slide{
+        width: 195%;
+    }
+    .slide-show{
+        width:16rem;
+        height:32rem;
+        border-radius:4px 4px 14px 14px;
+    }
+    .slide img{
+        height: 32rem;
+        width: 100%;
+        object-fit: cover;
+        image-rendering: pixelated;
+    }
+}
+
+/* IPAD */
+@media (min-width: 768px) and (max-width: 1023px){
+    .nav-mobile-logo{
+        margin-right: 40rem;
+    }
+    .banner{
+        padding: 0 0 10rem 0;
+    }
+    .banner-image{
+        text-align: right;
+    }
+    .banner-content{
+        margin-top: 0;
+    }
+    .btn-control{
+         right: -6.3rem;
+    }
+    .banner-image img{
+        width:90%;
+    }
+    .banner-image {
+        width: 100%;
+        margin-top: 4rem;
+        text-align: center;
+    }
+    .banner-content{
+        margin-right: 0;
+        margin-left: 3rem;
+    }
+    .banner-content img{
+        width: 90%;
+    }
+    .form-group{
+        width: 37rem;
+    }
+    .input-control{
+        width: 100%;
+    }
+    .btn-control{
+        width: 14rem;
+        height: 5.8rem;
+        margin-right:.3rem;
+    }
+    .rating-content{
+        padding:0;
+    }
+    .program-heading{
+        font-size: 4.4rem;
+    }
+    .program-img{
+        margin-top:7rem;
+    }
+    .program-img img{
+        width: 100%;
+    }
+    .program-app{
+        width: 100%;
+        padding: 0;
+    }
+    .program-list span{
+        width: 12rem;
+        height: 5rem;
+    }
+    .view-context{
+        padding: 0;
+        margin-top:2rem;
+    }
+    .view img:first-child{
+        width: 45%;
+        transform: translateY(-3.4rem)
+    }
+    
+    .view img:nth-child(2){
+        width: 45%;
+        transform: translate(1.4rem,-7.4rem)
+    }
+    
+    .view img:nth-child(3){
+        width: 45%;
+        transform: translateY(-10.4rem);
+    }
+    
+    .view img:nth-child(4){
+        width: 45%;
+        transform: translate(1.4rem,-6.4rem)
+    }
+    .view-context h2{
+        margin-top: 0;
+        font-size: 3.8rem;
+    }
+    .app-context{
+        margin-top:6rem;
+        padding: 0;
+    }
+    .app-heading{
+        font-size:3.9rem;
+    }
+    .app-img img{
+        margin-top:1rem;
+        width: 90%;
+    }
+    .my-video{
+        width: 70rem;
+        height: 40rem;
+    }
+    .video-img{
+        padding: 18rem 16rem;
+    }
+    .slide-show{
+        width:24rem;
+        height:51rem;
+        border-radius: 8px 8px 26px 26px;
+    }
+    .slide img{
+        height: 53rem;
+        width: 100%;
+        object-fit: cover;
+        image-rendering: pixelated;
+    }
+}
+
+/* IPAD PRO */
+@media (min-width: 1024px) and (max-width: 1190px){
+    .rating-content{
+        padding: 0 6.6rem 0 ;
+    }   
+    .program-img{
+        margin-top:7rem;
+    }
+    .program-img img{
+        width: 60%;
+    }
+    .program-app{
+        width: 130%;
+        padding: 0 6.6rem 0 ;
+    }
+    .view-img{
+        padding-left: 6rem;
+    }
+    .view-context{
+        padding-right: 6rem;
+    }
+    .view-context h2{
+        margin-top:10rem;
+    }
+    .view img:first-child{
+        width: 45%;
+    }
+    
+    .view img:nth-child(2){
+        width: 45%;
+    }
+    
+    .view img:nth-child(3){
+        width: 45%;
+        transform: translateY(-11.6rem);
+    }
+    
+    .view img:nth-child(4){
+        width: 45%;
+    }
+    .app-context{
+        padding: 0 0 0 6.6rem;
+        margin-top: 4rem;
+    }
+    .app-img img{
+        width: 60%;
+    }
+
+}
+
+@media (min-width: 1200px){  
+    .banner-content{
+        margin-top:6rem;
+    }
+    .rating-content{
+        padding: 0;
+    }
+}
