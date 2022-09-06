@@ -57,6 +57,9 @@
     .banner-content {
         margin-right: 0;
     }
+    .rating__single{
+        margin: 0 2rem;
+    }
     .rating-content{
         padding: 0 6.6rem 0 ;
     } 
@@ -176,6 +179,9 @@
 
 /* IphoneX */
 @media (max-width: 599px) {
+    .nav{
+        justify-content: center;
+    }
     .nav__right{
         display:none;
     }
@@ -325,6 +331,9 @@
         height: 5.8rem;
         margin-right:.3rem;
     }
+    .rating__single{
+        margin: 0;
+    }
     .rating-content{
         padding:0;
     }
@@ -437,7 +446,7 @@
     
     .view img:nth-child(3){
         width: 45%;
-        transform: translateY(-11.6rem);
+        transform: translateY(-14.6rem);
     }
     
     .view img:nth-child(4){
@@ -459,5 +468,13 @@
     }
     .rating-content{
         padding: 0;
+    }
+    .slide-show{
+        width: 30rem;
+        height: 62rem;
+        border-radius: 0px 0px 26px 26px
+    }
+    .slide img{
+        height: 63rem;
     }
 }
