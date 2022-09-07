@@ -588,6 +588,7 @@ html{
 .program-list span{
     background-color: #5454D4;
     color: #fff;
+    padding: 0 1.8rem;
     border-radius: 50%;
     width: 8rem;
     height: 5rem;
@@ -638,6 +639,114 @@ html{
         transform: translateY(-2rem);
     }
 }
+
+
+/* Phonecases */
+.phonecases{
+    padding: 2rem 0;
+    background-color: #F9F9F9;
+}
+
+.phonecases-bg{
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 15%);
+    margin-top: 16rem;
+    margin-bottom: 18rem;
+}
+
+.phonecases-left{
+    margin: 3rem 0 3rem 3rem;
+}
+
+.phonecases-left h2{
+    margin-bottom: 3.2rem;
+    color: #1B1B1B;
+    font-size: 3.3rem;
+}
+
+.phonecases-list h3{
+    margin-bottom: 3.2rem;
+    font-size: 2.6rem;
+}
+
+.phonecases-list p{
+    line-height: 1.7;
+    font-size: 1.8rem;
+    margin-bottom: 2.4rem;
+    margin-right: 7rem;
+}
+
+.phonecases-btn {
+    border: none;
+}
+
+.phonecases-btn a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #fff;
+    min-height: 6rem;
+    min-width: 18rem;
+    border-radius: 0.5rem;
+    transition: all 0.4s linear 0s;
+    background-image: -webkit-linear-gradient(0deg ,#b984ff 0%,#62abfc 100%);
+}
+
+.phonecases-btn a::before{
+    visibility: visible;
+    content: "\f061";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.5rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0rem;
+    top: 1.8rem;
+    height: 100%;
+    transform: translateX(100%);
+    transition: all 0.3s linear 0s;
+}
+
+.phonecases-btn:hover a::before{
+    right: 3rem;
+    text-indent: 0;
+    transform: translateY(-25%);
+    transition: all 0.4s ease-in-out
+}
+
+
+.phonecases-btn a:hover{
+    text-indent: -20px;
+    cursor: pointer;
+    transition: all 0.4s linear 0s;
+}
+
+.phonecases-btn:hover span{
+    right: -11px;
+    transition: all 0.4s ease-in-out
+}
+
+.phonecases-right{
+    width: 100%;
+    border-radius: 1rem;
+    margin: -5rem 0rem -6rem -4rem;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
+}
+
+.phonecases-right img{
+    width:100%;
+    border-radius: 1rem;
+    background-color: #F9F9F9;
+
+}
+
 
 
 /* View */
@@ -779,6 +888,35 @@ html{
     font-family: "Circular Std", Sans-serif;
     transition: all 0.4s ease-in-out
 }
+
+/* Note */
+.note{
+    padding: 2rem 0;
+}
+
+.note__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.note__list img{
+    width: 50%;
+}
+
+.note__list h5{
+    margin-bottom: 2rem;
+    font-size: 1.9rem;
+}   
+
+.note__list p{
+    font-size:1.8rem;
+    margin: 0 4rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
 
 /* Video */
 .video-img{

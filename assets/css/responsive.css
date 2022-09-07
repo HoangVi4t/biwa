@@ -75,6 +75,10 @@
     .program-heading{
         font-size: 4.4rem;
     }
+    .phonecases-right{
+        width: 90%;
+        margin: -5rem 0rem 2rem 3rem;
+    }
     .view-context{
         padding: 0 10rem;
         margin-top:4rem;
@@ -115,6 +119,9 @@
     }
     .app-heading{
         font-size: 3.8rem;
+    }
+    .note__list img{
+        width: 30%;
     }
     .my-video{
         width: 54rem;
@@ -225,6 +232,12 @@
         width: 12rem;
         height: 4.6rem;
     }
+    .phonecases-right{
+        margin: -5rem 0rem 2rem 2rem;
+    }
+    .phonecases-left h2{
+        font-size:3rem;
+    }
     .view-context{
         padding: 0 2rem;
         margin-top:4rem;
@@ -264,6 +277,9 @@
     }
     .app-heading{
         font-size: 3.8rem;
+    }
+    .note__list img{
+        width: 30%;
     }
     .my-video {
         width: 35rem;
@@ -354,6 +370,10 @@
         width: 12rem;
         height: 5rem;
     }
+    .phonecases-right{
+        width: 190%;
+        margin: -9rem 0rem 4rem 8rem;
+    }
     .view-context{
         padding: 0;
         margin-top:2rem;
@@ -392,6 +412,9 @@
         margin-top:1rem;
         width: 90%;
     }
+    .note__list img{
+        width: 30%;
+    }
     .my-video{
         width: 70rem;
         height: 40rem;
@@ -427,6 +450,10 @@
         width: 130%;
         padding: 0 6.6rem 0 ;
     }
+    .phonecases-bg{
+        margin:16rem 2rem 18rem 2rem;
+    }
+
     .view-img{
         padding-left: 6rem;
     }
